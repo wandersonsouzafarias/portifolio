@@ -28,22 +28,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="estilos.css">
       </head>
-      
-      
 
 <body>
-  <!-- Navbar -->
+  <!--NAVBAR-->
   <nav class="navbar" aria-label="Menu principal">
-    <ul class="menu">
+    <div class="logo">Wanderson.dev</div>
+  
+    <!-- ✅ TEM QUE EXISTIR e ficar ANTES do menu -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+  
+    <label for="nav-toggle" class="nav-bubble" aria-label="Abrir menu">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    </label>
+  
+    <ul class="menu" id="menu">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#projetos">Projetos</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
-
-    <div class="logo">Wanderson.dev</div>
   </nav>
-
+  
   <!-- Conteúdo principal -->
   <main>
     <!-- Hero -->
@@ -75,10 +81,6 @@
       </div>
     </header>
     
-    
-    
-    
-
     <!-- Sobre -->
     <section id="sobre" class="reveal">
       <h2>Sobre mim</h2>
@@ -95,59 +97,57 @@
         realmente ajudem meus clientes a crescer.
       </p>
     </section>
+<!-- Serviços -->
+<section id="servicos" class="reveal services">
+  <div class="services-panel">
+    <!-- Fundo grande atrás -->
+    <div class="services-bg" aria-hidden="true"></div>
 
-    <!-- Serviços -->
-    <section id="servicos" class="reveal services">
-      <div class="services-panel">
-        <!-- Fundo grande atrás -->
-        <div class="services-bg" aria-hidden="true"></div>
-    
-        <div class="services-head">
-          <h2>Serviços</h2>
-          <p>Aprimore a presença digital do seu negócio com meus serviços especializados.</p>
-        </div>
-    
-        <div class="services-grid">
-          <!-- Card 1 -->
-          <article class="service-card">
-            <div class="service-media">
-              <img src="imagens/servicos1.png" alt="Criação de Sites" loading="lazy">
-            </div>
-            <h3>Criação de Sites</h3>
-            <p>Desenvolvimento de sites profissionais, adaptáveis a todos os dispositivos.</p>
-          </article>
-    
-          <!-- Card 2 -->
-          <article class="service-card">
-            <div class="service-media">
-              <img src="imagens/servicos-landing-page.png" alt="Landing Pages" loading="lazy">
-            </div>
-            <h3>Landing Pages</h3>
-            <p>Criação de páginas de alta conversão para campanhas de marketing.</p>
-          </article>
-    
-          <!-- Card 3 -->
-          <article class="service-card">
-            <div class="service-media">
-              <img src="imagens/suporte.png" alt="Manutenção e Suporte" loading="lazy">
-            </div>
-            <h3>Manutenção e Suporte</h3>
-            <p>Atualizações, backups e suporte contínuo para seu site.</p>
-          </article>
-    
-          <!-- Card 4 -->
-          <article class="service-card">
-            <div class="service-media">
-              <img src="imagens/seo.png" alt="Otimização SEO" loading="lazy">
-            </div>
-            <h3>Otimização SEO</h3>
-            <p>Melhore seu ranking no Google com otimizações de SEO avançadas.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-    
+    <div class="services-head">
+      <h2>Serviços</h2>
+      <p>Aprimore a presença digital do seu negócio com meus serviços especializados.</p>
+    </div>
 
+    <div class="services-grid">
+      <!-- Card 1 -->
+      <article class="service-card">
+        <div class="service-media">
+          <img src="imagens/servicos1.png" alt="Criação de Sites" loading="lazy">
+        </div>
+        <h3>Criação de Sites</h3>
+        <p>Desenvolvimento de sites profissionais, adaptáveis a todos os dispositivos.</p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card">
+        <div class="service-media">
+          <img src="imagens/servicos-landing-page.png" alt="Landing Pages" loading="lazy">
+        </div>
+        <h3>Landing Pages</h3>
+        <p>Criação de páginas de alta conversão para campanhas de marketing.</p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card">
+        <div class="service-media">
+          <img src="imagens/suporte.png" alt="Manutenção e Suporte" loading="lazy">
+        </div>
+        <h3>Manutenção e Suporte</h3>
+        <p>Atualizações, backups e suporte contínuo para seu site.</p>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card">
+        <div class="service-media">
+          <img src="imagens/seo.png" alt="Otimização SEO" loading="lazy">
+        </div>
+        <h3>Otimização SEO</h3>
+        <p>Melhore seu ranking no Google com otimizações de SEO avançadas.</p>
+      </article>
+    </div>
+  </div>
+</section>
+    
     <section id="projetos" class="reveal">
         <h2>Projetos</h2>
       
@@ -237,14 +237,35 @@
 
       <div class="contato-info">
         <p>📧 Email: <a href="mailto:wandersonsouzaprogramador@gmail.com">wandersonsouzaprogramador@gmail.com</a></p>
-        <p>📱 WhatsApp: <a href="https://wa.me/5531987167231" target="_blank" rel="noopener">Clique para conversar</a></p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Wanderson. Desenvolvedor Web.</p>
+  <footer class="site-footer">
+    <div class="footer-bg" aria-hidden="true"></div>
+  
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">Wanderson.dev</div>
+        <p class="footer-text">
+          Transformo ideias em experiências digitais de sites pessoais a projetos profissionais.
+        </p>
+      </div>
+  
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2026 Wanderson. Desenvolvedor Web.</p>
+    </div>
   </footer>
+  
+  
 
   <!-- Botão WhatsApp flutuante (dentro do body) -->
   <a
@@ -306,11 +327,11 @@
           form.reset();
         } else {
           msg.className = 'form-msg show error';
-          msg.textContent = '❌ Não foi possível enviar agora. Tente novamente em instantes.';
+          msg.textContent = ' Não foi possível enviar agora. Tente novamente em instantes.';
         }
       } catch (err) {
         msg.className = 'form-msg show error';
-        msg.textContent = '❌ Falha de conexão. Verifique sua internet e tente novamente.';
+        msg.textContent = 'Falha de conexão. Verifique sua internet e tente novamente.';
       } finally {
         btn.classList.remove('loading');
         btn.disabled = false;
@@ -318,5 +339,16 @@
       }
     });
   </script>
+
+<!--Faz com que o menu suma quando clica em munu.-->
+<script>
+  document.querySelectorAll('.menu a').forEach(a => {
+    a.addEventListener('click', () => {
+      const t = document.getElementById('nav-toggle');
+      if (t) t.checked = false;
+    });
+  });
+</script>
+
 </body>
 </html>
