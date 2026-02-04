@@ -349,6 +349,15 @@
     });
   });
 </script>
+<script>
+  window.addEventListener('load', () => {
+    // Remove qualquer foco automático
+    document.activeElement.blur();
+
+    // Força início da página
+    window.scrollTo(0, 0);
+  });
+</script>
 
 </body>
 </html>
